@@ -1,0 +1,163 @@
+/** general **/
+@font-face {
+  font-family: "Heebo-Regular";
+  src: url("./fonts/Heebo-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Heebo-Bold";
+  src: url("./fonts/Heebo-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Heebo-Medium";
+  src: url("./fonts/Heebo-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  color: #21243d;
+  outline: none;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .row > * {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/** text weight / size / color **/
+.text-regular {
+  font-family: Heebo-Regular, arial;
+}
+.text-bold {
+  font-family: Heebo-Bold, arial;
+  font-weight: normal;
+}
+.text-medium {
+  font-family: Heebo-Medium, arial;
+}
+
+.text-md {
+  font-size: 18px;
+  line-height: 26.4px;
+}
+.text-lg {
+  font-size: 20px;
+  line-height: 30px;
+}
+.text-xlg {
+  font-size: 22px;
+  line-height: 60px;
+}
+
+p,
+span,
+label,
+li,
+a {
+  font-size: 16px;
+  font-family: Heebo-Regular, arial;
+  line-height: 23.5px;
+}
+
+h1 {
+  font-family: Heebo-Bold, arial;
+  font-size: 44px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: Heebo-Bold, arial;
+  font-size: 26px;
+  line-height: 38.2px;
+  font-weight: normal;
+}
+
+.text-gray {
+  color: #8695a4;
+}
+.text-blue {
+  color: #00a8cc;
+}
+.text-black {
+  color: #000000;
+}
+.text-orange {
+  color: #ff6464;
+}
+a.text-orange:hover {
+  color: #f15b5b;
+}
+
+/** backgrounds **/
+.bg-white {
+  background-color: #fff;
+}
+.bg-blue {
+  background-color: #edf7fa;
+}
+
+/** buttons **/
+.btn {
+  border-radius: 2px;
+}
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.btn-orange {
+  background: #ff6464;
+  color: #fff;
+}
+.btn-orange:hover {
+  background: #f15b5b;
+  color: #fff;
+}
+
+/** menu **/
+#menu {
+  margin-top: 27px;
+}
+
+/** about me **/
+#about-me {
+  margin-top: 140px;
+}
+
+/** experience **/
+#experience {
+  margin-top: 95px;
+  overflow: hidden;
+}
+
+.circle-container {
+  background-color: #fff;
+  position: relative;
+  margin-top: 5px;
+}
+
+.vertical-bar {
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  height: 100%;
+  width: 10px;
+  background-image: url("../images/vertical-bar.png");
+  background-repeat: repeat-y;
+}
+
+#experience-items .row:last-child .circle-container {
+  height: 100%;
+}
