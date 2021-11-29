@@ -47,7 +47,6 @@ html {
 .text-medium {
   font-family: Heebo-Medium, arial;
 }
-
 .text-md {
   font-size: 18px;
   line-height: 26.4px;
@@ -85,6 +84,13 @@ h2 {
   font-weight: normal;
 }
 
+.progress {
+  height: 0.5rem;
+}
+.progress-bar {
+  background-color: #21243d;
+}
+
 .text-gray {
   color: #8695a4;
 }
@@ -97,14 +103,14 @@ h2 {
 .text-orange {
   color: #ff6464;
 }
+.text-gold {
+  color: #ff6464;
+}
 a.text-orange:hover {
   color: #f15b5b;
 }
 
 /** backgrounds **/
-.bg-white {
-  background-color: #fff;
-}
 .bg-blue {
   background-color: #edf7fa;
 }
@@ -160,4 +166,22 @@ a.text-orange:hover {
 
 #experience-items .row:last-child .circle-container {
   height: 100%;
+}
+
+/** portfolio **/
+#portfolio {
+  margin-top: 95px;
+}
+
+/** testimonials **/
+#testimonials {
+  margin-top: 95px;
+}
+
+#testimonials .carousel {
+  min-height: 280px;
+}
+
+#testimonials .carousel-indicators [data-bs-target] {
+  background-color: #21243d;
 }
