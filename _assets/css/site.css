@@ -145,13 +145,28 @@ a.text-orange:hover,
   z-index: 2;
 }
 
+.navbar-toggler-icon {
+  background-image: url("../images/bars-solid.svg");
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 /** about me **/
 #about-me {
   margin-top: 140px;
 }
 
+@media all and (max-width: 576px) {
+  #about-me img {
+    max-width: 150px;
+    margin: auto;
+    display: block;
+  }
+}
+
 /** experience **/
-#experience {
+#experience-items {
   overflow: hidden;
 }
 
