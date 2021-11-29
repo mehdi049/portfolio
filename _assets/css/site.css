@@ -198,3 +198,43 @@ a.text-orange:hover,
 #testimonials .carousel-indicators [data-bs-target] {
   background-color: #21243d;
 }
+
+#testimonials .carousel-item .bg-white {
+  min-height: 230px;
+}
+
+@media all and (max-width: 1200px) {
+  #testimonials .carousel {
+    min-height: 320px;
+  }
+  #testimonials .carousel-item .bg-white {
+    min-height: 252px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  #testimonials .carousel {
+    min-height: 380px;
+  }
+  #testimonials .carousel-item .bg-white {
+    min-height: 325px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #testimonials .carousel {
+    min-height: 330px;
+  }
+  #testimonials .carousel-item .bg-white {
+    min-height: 255px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  #testimonials .carousel {
+    min-height: 380px;
+  }
+  #testimonials .carousel-item .bg-white {
+    min-height: 325px;
+  }
+}
