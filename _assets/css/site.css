@@ -106,7 +106,9 @@ h2 {
 .text-gold {
   color: #ff6464;
 }
-a.text-orange:hover {
+a.text-orange:hover,
+.nav-link:focus,
+.nav-link:hover {
   color: #f15b5b;
 }
 
@@ -134,7 +136,13 @@ a.text-orange:hover {
 
 /** menu **/
 #menu {
-  margin-top: 27px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 2px 2px 3px #e9e9e9;
+  background: #fff;
+  z-index: 2;
 }
 
 /** about me **/
@@ -144,7 +152,6 @@ a.text-orange:hover {
 
 /** experience **/
 #experience {
-  margin-top: 95px;
   overflow: hidden;
 }
 
@@ -168,16 +175,7 @@ a.text-orange:hover {
   height: 100%;
 }
 
-/** portfolio **/
-#portfolio {
-  margin-top: 95px;
-}
-
 /** testimonials **/
-#testimonials {
-  margin-top: 95px;
-}
-
 #testimonials .carousel {
   min-height: 280px;
 }
