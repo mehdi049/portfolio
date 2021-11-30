@@ -186,6 +186,12 @@ a.text-orange:hover,
   background-repeat: repeat-y;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .vertical-bar {
+    left: 19px;
+  }
+}
+
 #experience-items .row:last-child .circle-container {
   height: 100%;
 }
