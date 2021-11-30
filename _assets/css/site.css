@@ -25,6 +25,10 @@
   outline: none;
 }
 
+.row {
+  overflow-x: hidden;
+}
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .row > * {
     padding-left: 0.75rem;
