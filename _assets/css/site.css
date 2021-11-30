@@ -26,7 +26,7 @@
 }
 
 .row {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
