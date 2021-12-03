@@ -89,7 +89,7 @@ h2 {
 }
 
 .progress {
-  height: 0.5rem;
+  height: 0.9rem;
 }
 .progress-bar {
   background-color: #21243d;
@@ -198,6 +198,24 @@ a.text-orange:hover,
 
 #experience-items .row:last-child .circle-container {
   height: 100%;
+}
+
+/* portfolio **/
+#supplier-portal-modal .carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
+}
+#supplier-portal-modal .carousel-control-prev-icon {
+  background-image: url("../images/chevron-left-solid.svg");
+}
+#supplier-portal-modal .carousel-control-next-icon {
+  background-image: url("../images/chevron-right-solid.svg");
+}
+#supplier-portal-modal .carousel-indicators [data-bs-target] {
+  background-color: #0f0f0f;
+}
+#supplier-portal-modal .carousel-indicators {
+  margin-bottom: -1rem;
 }
 
 /** testimonials **/
