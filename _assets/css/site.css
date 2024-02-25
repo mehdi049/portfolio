@@ -121,6 +121,10 @@ a.text-orange:hover,
   background-color: #edf7fa;
 }
 
+.bg-orange {
+  background: #ff6464;
+}
+
 /** buttons **/
 .btn {
   border-radius: 2px;
