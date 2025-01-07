@@ -39,12 +39,12 @@ export default function Hero() {
           width={400}
           height={400}
           alt="Mehdi Marouani"
-          className="border-2 border-gray-800 rounded-full p-2 sm:p-4 grayscale max-w-[200px] md:max-w-none"
+          className="border-2 border-gray-800 rounded-full p-2 sm:p-4 grayscale max-w-[150px] sm:max-w-[200px] md:max-w-none"
         />
       </div>
 
       <Link href="#about-me">
-        <CircleArrowDown className="text-gray-900 animate-bounce absolute bottom-4 sm:bottom-10 -ml-4 sm:-ml-6 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 sm:w-12 sm:h-12 cursor-pointer" />
+        <CircleArrowDown className="text-gray-900 animate-bounce absolute bottom-16 sm:bottom-10 -ml-4 sm:-ml-6 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 sm:w-12 sm:h-12 cursor-pointer" />
       </Link>
     </div>
   );

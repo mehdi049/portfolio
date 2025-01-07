@@ -1,6 +1,13 @@
 import { H2 } from "@/components/typography/h2";
 import { H5 } from "@/components/typography/h5";
 import { H6 } from "@/components/typography/h6";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
 import Image from "next/image";
 
 export default function Portfolio() {
@@ -17,7 +24,7 @@ export default function Portfolio() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-20 w-full">
+      <div className="hidden md:grid grid-cols-2 gap-8 lg:gap-20 w-full">
         <PortfolioItem
           index={1}
           bg="flitter-landing.webp"
@@ -63,6 +70,92 @@ export default function Portfolio() {
           year="2021"
         />
       </div>
+
+      <div className="md:hidden">
+        <Carousel
+          opts={{
+            align: "start",
+          }}
+          className="w-full max-w-xs sm:max-w-sm"
+        >
+          <CarouselContent>
+            <CarouselItem className="">
+              <PortfolioItem
+                index={1}
+                bg="flitter-landing.webp"
+                title="Flitter (landing pages)"
+                year="2022 - 2024"
+              />
+            </CarouselItem>
+            <CarouselItem className="">
+              <PortfolioItem
+                index={2}
+                bg="flitter-estimate.webp"
+                title="Flitter (estimate steps)"
+                year="2022 - 2024"
+              />
+            </CarouselItem>
+            <CarouselItem className="">
+              <PortfolioItem
+                index={3}
+                bg="flitter-app.webp"
+                title="Flitter (app)"
+                year="2022 - 2024"
+              />
+            </CarouselItem>
+            <CarouselItem className="">
+              <PortfolioItem
+                index={4}
+                bg="vistaprint-domains.webp"
+                title="Vistaprint (domains)"
+                year="2022 - 2024"
+              />
+            </CarouselItem>
+            <CarouselItem className="">
+              <PortfolioItem
+                index={5}
+                bg="matchi.webp"
+                title="Matchi"
+                year="2024"
+              />
+            </CarouselItem>
+            <CarouselItem className="">
+              <PortfolioItem
+                index={6}
+                bg="joplin.webp"
+                title="Joplin"
+                year="2021"
+              />
+            </CarouselItem>
+            <CarouselItem className="">
+              <PortfolioItem
+                index={7}
+                bg="boiswood.webp"
+                title="Boiswood"
+                year="2016"
+              />
+            </CarouselItem>
+            <CarouselItem className="">
+              <PortfolioItem
+                index={8}
+                bg="translogistica.webp"
+                title="Translogistica"
+                year="2021"
+              />
+            </CarouselItem>
+            <CarouselItem className="">
+              <PortfolioItem
+                index={9}
+                bg="effortless-renovation.webp"
+                title="EffortlessRenovation"
+                year="2021"
+              />
+            </CarouselItem>
+          </CarouselContent>
+          <CarouselPrevious className="-left-4 sm:-left-12" />
+          <CarouselNext className="-right-4 sm:-right-12" />
+        </Carousel>
+      </div>
     </div>
   );
 }
@@ -75,13 +168,13 @@ type PortfolioItemProps = {
 };
 const PortfolioItem = ({ index, bg, title, year }: PortfolioItemProps) => {
   return (
-    <div className="flex flex-col gap-4 cursor-pointer">
+    <div className="space-y-4 cursor-pointer overflow-hidden">
       <Image
         src={`/portfolio/${bg}`}
         width={1100}
         height={700}
         alt={title}
-        className={`bg-gray-50 border-2 border-gray-100 p-4 w-full object-contain `}
+        className="bg-gray-50 border-2 border-gray-100 p-4 object-contain"
       />
       <div className="flex gap-2 sm:gap-4 items-start">
         <H5 className="font-semibold">0{index}.</H5>

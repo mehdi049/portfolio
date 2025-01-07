@@ -10,7 +10,7 @@ export const Footer = () => {
       <Container>
         <footer className="pb-12 md:pb-20">
           <p className="text-center text-xs text-gray-500">
-            {currentYear} Made with love by -{" "}
+            &copy; {currentYear} Made with love by -{" "}
             <a
               href="https://github.com/mehdi049"
               target="_blank"

@@ -71,3 +71,16 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-180%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}

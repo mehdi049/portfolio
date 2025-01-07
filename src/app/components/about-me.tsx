@@ -38,7 +38,7 @@ export default function AboutMe() {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-8 gap-8 w-full">
+        <div className="hidden md:grid md:grid-cols-8 gap-8 w-full">
           <StackItem image="html.png" title="HTML" />
           <StackItem image="css.png" title="CSS" />
           <StackItem image="typescript.png" title="Typescript" />
@@ -56,6 +56,27 @@ export default function AboutMe() {
           <StackItem image="storybook.png" title="Storybook" />
           <StackItem image="pwa.png" title="PWA" />
         </div>
+
+        <div className="relative overflow-x-hidden w-full md:hidden">
+          <div className="flex items-center justify-center space-x-10 animate-marquee">
+            <StackItem image="html.png" title="HTML" />
+            <StackItem image="css.png" title="CSS" />
+            <StackItem image="typescript.png" title="Typescript" />
+            <StackItem image="react.png" title="React" />
+            <StackItem image="nextjs.png" title="NextJs" />
+            <StackItem image="prisma.png" title="Prisma" />
+            <StackItem image="tailwind.png" title="Tailwindcss" />
+            <StackItem image="shadcn-ui.png" title="shadcn/ui" />
+            <StackItem image="git.png" title="Git" />
+            <StackItem image="jira.png" title="JIRA" />
+            <StackItem image="postgresql.png" title="PostgresSql" />
+            <StackItem image="strapi.png" title="Strapi" />
+            <StackItem image="jest.png" title="Jest" />
+            <StackItem image="cypress.png" title="Cypress" />
+            <StackItem image="storybook.png" title="Storybook" />
+            <StackItem image="pwa.png" title="PWA" />
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -68,13 +89,15 @@ type StackItemProps = {
 const StackItem = ({ image, title }: StackItemProps) => {
   return (
     <div className="flex flex-col gap-4 items-center justify-center">
-      <Image
-        alt=""
-        height={50}
-        width={50}
-        src={`/stack/${image}`}
-        className="grayscale w-8 h-8 sm:w-12 sm:h-12"
-      />
+      <div>
+        <Image
+          alt=""
+          height={50}
+          width={50}
+          src={`/stack/${image}`}
+          className="grayscale w-8 h-8 min-w-8 min-h-8 sm:w-12 sm:h-12"
+        />
+      </div>
       <H6 className="text-xs sm:font-medium sm:text-base text-gray-700">
         {title}
       </H6>
