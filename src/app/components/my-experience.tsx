@@ -67,7 +67,7 @@ export default function MyExperience() {
           <ExperienceItem
             title="Freelancer web developer"
             company="Upwork"
-            link="https://www.upwork.com/freelancers/~011c1c4df7e86a3d93"
+            link="#"
             date="2021 - 2022"
           >
             <Ul>
@@ -76,7 +76,7 @@ export default function MyExperience() {
                 and 100% job success rate.
                 <br />
                 <a
-                  href="https://www.upwork.com/freelancers/~011c1c4df7e86a3d93"
+                  href="#"
                   target="_blank"
                   rel="noreferrer"
                   className="text-gray-700 underline"

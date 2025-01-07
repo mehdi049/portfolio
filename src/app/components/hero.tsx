@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div
-      className="flex flex-col sm:flex-row gap-8 sm:gap-4 min-h-screen items-center sm:justify-between pt-[90px] md:pt-0 relative"
+      className="flex flex-col sm:flex-row gap-8 sm:gap-4 min-h-screen items-center sm:justify-between pt-[80px] md:pt-0 relative"
       id="home"
     >
       <div className="flex flex-col items-center sm:items-start gap-6 sm:gap-12 grow order-2 sm:order-1">
@@ -28,11 +28,7 @@ export default function Hero() {
           >
             <Button>Download my CV</Button>
           </a>
-          <a
-            href="https://www.upwork.com/freelancers/~011c1c4df7e86a3d93"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="#" target="_blank" rel="noreferrer">
             <Button>Hire me on Upwork</Button>
           </a>
         </div>
