@@ -1,6 +1,6 @@
 import { H2 } from "@/components/typography/h2";
 import { Button } from "@/components/ui/button/button";
-import { GithubIcon, LinkedinIcon, Mail, Phone, Pin } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, Pin } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -42,7 +42,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <LinkedinIcon />
+                <Linkedin />
               </a>
               <a
                 className="text-gray-500 border border-gray-300 p-1 hover:bg-gray-100 duration-200"
@@ -50,7 +50,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <GithubIcon />
+                <Github />
               </a>
             </p>
           </div>

@@ -8,7 +8,7 @@ import {
   SheetTrigger,
 } from "../ui/sheet";
 
-import { Menu } from "lucide-react";
+import { Github, Linkedin, Menu } from "lucide-react";
 import Image from "next/image";
 
 export const Header = () => {
@@ -53,17 +53,38 @@ export const Header = () => {
                 </HeaderLinkMobile>
                 <HeaderLinkMobile href="#contact">06. Contact</HeaderLinkMobile>
               </div>
-              <p className="text-xs text-gray-500">
-                &copy; {currentYear} Made with love by -{" "}
-                <a
-                  href="https://github.com/mehdi049"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-medium underline"
-                >
-                  Mehdi
-                </a>
-              </p>
+              <div className="space-y-6">
+                <p className="flex items-center gap-4">
+                  <a
+                    className="bg-black focus:bg-black/80 p-1 text-white rounded-sm"
+                    href="https://www.linkedin.com/in/mehdi-marouani-a653a059/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Linkedin />
+                  </a>
+                  <a
+                    className="bg-black focus:bg-black/80 p-1 text-white rounded-sm"
+                    href="https://github.com/mehdi049"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Github />
+                  </a>
+                </p>
+
+                <p className="text-xs text-gray-500">
+                  &copy; {currentYear} Made with love by -{" "}
+                  <a
+                    href="https://github.com/mehdi049"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-medium underline"
+                  >
+                    Mehdi
+                  </a>
+                </p>
+              </div>
             </div>
           </SheetContent>
         </Sheet>
