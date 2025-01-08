@@ -23,14 +23,14 @@ export default function AboutMe() {
             responsive web applications.
           </H5>
           <p className="text-gray-500 text-sm max-w-6xl mx-auto">
-            I am a highly skilled web developer specializing in both front-end
-            and back-end development, with a strong focus on front-end
-            technologies in recent years. <br /> As a top-rated freelancer on
-            Upwork with 100% job success, I have a proven track record of
-            delivering clean, maintainable, and well-documented code that
-            ensures long-term scalability and ease of collaboration. <br /> My
-            expertise lies in creating user-friendly, visually appealing, and
-            efficient web solutions tailored to meet each client’s unique needs.
+            I am a skilled web developer specializing in both front-end and
+            back-end development, with a strong focus on front-end technologies
+            in recent years. <br /> As a top-rated freelancer on Upwork with
+            100% job success, I have a proven track record of delivering clean,
+            maintainable, and well-documented code that ensures long-term
+            scalability and ease of collaboration. <br /> My expertise lies in
+            creating user-friendly, visually appealing, and efficient web
+            solutions tailored to meet each client’s unique needs.
             <br />
             Passionate about problem-solving, I bring creativity and precision
             to every project, whether working independently or as part of a

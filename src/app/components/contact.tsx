@@ -17,7 +17,9 @@ export default function Contact() {
               <span className="text-gray-500">
                 <Phone size="16px" />
               </span>
-              <span className="text-gray-500">+216 99 334 081</span>
+              <a href="tel:0021699334081" className="text-gray-500">
+                +216 99 334 081
+              </a>
             </p>
             <p className="flex items-center gap-2 justify-center sm:justify-start">
               <span className="text-gray-500">
@@ -31,9 +33,12 @@ export default function Contact() {
               <span className="text-gray-500">
                 <Mail size="16px" />
               </span>
-              <span className="text-gray-500">
+              <a
+                href="mailto:mehdi.marouani.freelancer@gmail.com"
+                className="text-gray-500"
+              >
                 mehdi.marouani.freelancer@gmail.com
-              </span>
+              </a>
             </p>
             <p className="flex items-center gap-4 justify-center sm:justify-start">
               <a
