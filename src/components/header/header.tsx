@@ -26,7 +26,7 @@ export const Header = () => {
         <HeaderLink href="#contact">Contact</HeaderLink>
       </nav>
       <nav className="flex md:hidden gap-4 justify-between items-center fixed top-0 left-0 z-10 bg-white shadow-sm shadow-gray-100 p-4 w-full">
-        <Image alt="Menu" height={36} width={36} src="/logo.png" />
+        <Image alt="Logo" height={36} width={36} src="/logo.png" />
         <Sheet>
           <SheetTrigger asChild>
             <Menu className="text-gray-700" />

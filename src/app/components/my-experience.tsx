@@ -15,35 +15,13 @@ export default function MyExperience() {
             title="Senior software engineer"
             company="Vistaprint"
             link="https://www.vistaprint.com/"
-            date="2019 - present"
+            date="2018 - present"
           >
             <Ul>
               <li>
                 I belong to the supply chain team, our role involves developing,
                 managing, and supporting the IT aspect of the business that is
                 used by over +200 suppliers and +70 plant users.
-              </li>
-            </Ul>
-          </ExperienceItem>
-
-          <ExperienceItem
-            title="Junior software engineer"
-            company="Vistaprint"
-            link="https://www.vistaprint.com/"
-            date="2018 - 2019"
-          >
-            <Ul>
-              <li>
-                Completed assigned tasks within deadlines and demonstrated
-                willingness to learn new technologies.
-              </li>
-              <li>
-                Enhanced the UI layout and made the web portal fully responsive,
-                increasing client usage by 150%.
-              </li>
-              <li>
-                Actively participated in Agile sprint planning, stand-ups, and
-                retrospectives.
               </li>
             </Ul>
           </ExperienceItem>

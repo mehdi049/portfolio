@@ -43,8 +43,8 @@ export default function Hero() {
         />
       </div>
 
-      <Link href="#about-me">
-        <CircleArrowDown className="text-gray-900 animate-bounce absolute bottom-16 sm:bottom-10 -ml-4 sm:-ml-6 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 sm:w-12 sm:h-12 cursor-pointer" />
+      <Link href="#about-me" className="order-3">
+        <CircleArrowDown className="text-gray-900 animate-bounce sm:absolute sm:bottom-10 sm:-ml-6 sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 w-8 h-8 sm:w-12 sm:h-12 cursor-pointer" />
       </Link>
     </div>
   );
