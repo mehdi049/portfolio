@@ -1,3 +1,5 @@
+"use client";
+
 import { H2 } from "@/components/typography/h2";
 import { H5 } from "@/components/typography/h5";
 import { H6 } from "@/components/typography/h6";
@@ -9,7 +11,6 @@ import {
   CarouselPrevious,
   CarouselNext,
 } from "@/components/ui/carousel";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   Sheet,
   SheetTrigger,
@@ -18,6 +19,7 @@ import {
   SheetTitle,
   SheetDescription,
 } from "@/components/ui/sheet";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 import Image from "next/image";
 
@@ -74,7 +76,7 @@ const portfolioItems: PortfolioItem[] = [
       "Prisma",
       "Postgresql",
       "PWA",
-      "sentry",
+      "Sentry",
       "Zod",
       "Next-auth",
     ],
@@ -121,7 +123,7 @@ const portfolioItems: PortfolioItem[] = [
       "Gitlab",
       "End-to-end testing",
       "Monorepo (lerna)",
-      "microservices",
+      "Microservices",
     ],
   },
   {
@@ -304,24 +306,35 @@ const portfolioItems: PortfolioItem[] = [
     link: "https://joplinapp.org/",
     description: (
       <>
-        <p className="text-gray-700 text-sm font-medium"></p>
-        <p className="text-gray-500 text-sm"></p>
+        <p className="text-gray-700 text-sm font-medium">
+          Upwork Client | Front-End Development
+        </p>
+        <p className="text-gray-500 text-sm">
+          I developed a fully functional website by converting a detailed Figma
+          design into responsive, pixel-perfect web pages. Built entirely from
+          scratch, the project focused on:
+        </p>
         <ul className="list-disc space-y-2 ml-4">
-          <li className="text-gray-500 text-sm"></li>
-          <li className="text-gray-500 text-sm"></li>
-          <li className="text-gray-500 text-sm"></li>
+          <li className="text-gray-500 text-sm">
+            Delivering a seamless translation of the design into clean,
+            maintainable code.
+          </li>
+          <li className="text-gray-500 text-sm">
+            Ensuring responsiveness and compatibility across devices and
+            browsers.
+          </li>
+          <li className="text-gray-500 text-sm">
+            Optimizing performance to provide a smooth user experience.
+          </li>
         </ul>
-        <p className="text-gray-500 text-sm"></p>
+        <p className="text-gray-500 text-sm">
+          This project demonstrates my proficiency in translating creative
+          concepts into functional, high-quality web applications while adhering
+          to client specifications.
+        </p>
       </>
     ),
-    mainStack: [
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "Node.js",
-      "Express",
-      "MongoDB",
-    ],
+    mainStack: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Figma"],
   },
   {
     image: "translogistica.webp",
@@ -330,24 +343,34 @@ const portfolioItems: PortfolioItem[] = [
     link: "https://www.translogisticasa.com/",
     description: (
       <>
-        <p className="text-gray-700 text-sm font-medium"></p>
-        <p className="text-gray-500 text-sm"></p>
+        <p className="text-gray-700 text-sm font-medium">
+          Upwork Client | Front-End Development
+        </p>
+        <p className="text-gray-500 text-sm">
+          I created a custom website for a building transportation company,
+          transforming Figma designs into a responsive and user-friendly
+          platform. Built entirely from scratch, the project showcased:
+        </p>
         <ul className="list-disc space-y-2 ml-4">
-          <li className="text-gray-500 text-sm"></li>
-          <li className="text-gray-500 text-sm"></li>
-          <li className="text-gray-500 text-sm"></li>
+          <li className="text-gray-500 text-sm">
+            Precise implementation of the design to maintain brand consistency.
+          </li>
+          <li className="text-gray-500 text-sm">
+            Responsive and optimized performance across devices and browsers.
+          </li>
+          <li className="text-gray-500 text-sm">
+            Clean, maintainable code to facilitate future updates and
+            scalability.
+          </li>
         </ul>
-        <p className="text-gray-500 text-sm"></p>
+        <p className="text-gray-500 text-sm">
+          This project highlights my ability to deliver high-quality,
+          tailor-made solutions that meet client requirements and enhance their
+          online presence.
+        </p>
       </>
     ),
-    mainStack: [
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "Node.js",
-      "Express",
-      "MongoDB",
-    ],
+    mainStack: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Figma"],
   },
   {
     image: "boiswood.webp",
@@ -356,23 +379,47 @@ const portfolioItems: PortfolioItem[] = [
     link: "https://www.boiswood.co.uk/",
     description: (
       <>
-        <p className="text-gray-700 text-sm font-medium"></p>
-        <p className="text-gray-500 text-sm"></p>
+        <p className="text-gray-700 text-sm font-medium">
+          UK Client | Front-End Development
+        </p>
+        <p className="text-gray-500 text-sm">
+          I developed a website for a UK-based client to showcase and manage
+          their range of gas and liquid control products. The project involved
+          close collaboration with the designer, client, and manager to ensure
+          the final product met technical and aesthetic requirements. Key
+          aspects included:
+        </p>
         <ul className="list-disc space-y-2 ml-4">
-          <li className="text-gray-500 text-sm"></li>
-          <li className="text-gray-500 text-sm"></li>
-          <li className="text-gray-500 text-sm"></li>
+          <li className="text-gray-500 text-sm">
+            Crafting a clean and user-friendly front-end interface using HTML
+            and CSS.
+          </li>
+          <li className="text-gray-500 text-sm">
+            Ensuring seamless integration with a .NET-based backend for dynamic
+            content management.
+          </li>
+          <li className="text-gray-500 text-sm">
+            Maintaining clear communication with stakeholders to align design
+            and functionality with business goals.
+          </li>
         </ul>
-        <p className="text-gray-500 text-sm"></p>
+        <p className="text-gray-500 text-sm">
+          This project highlights my ability to collaborate effectively in
+          cross-functional teams while delivering high-quality, client-focused
+          solutions.
+        </p>
       </>
     ),
     mainStack: [
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "Node.js",
-      "Express",
-      "MongoDB",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      ".NET",
+      "SQL Server",
+      "MVC",
+      "Entity Framework",
     ],
   },
 ];
@@ -445,6 +492,8 @@ const PortfolioItem = ({
   link,
   mainStack,
 }: PortfolioItem) => {
+  const isMobile = useIsMobile();
+
   return (
     <>
       <Sheet>
@@ -466,7 +515,7 @@ const PortfolioItem = ({
             </div>
           </div>
         </SheetTrigger>
-        <SheetContent side="right">
+        <SheetContent side={isMobile ? "bottom" : "right"}>
           <SheetHeader>
             <SheetTitle>{title}</SheetTitle>
             <SheetDescription></SheetDescription>
@@ -479,9 +528,9 @@ const PortfolioItem = ({
               alt={title}
               className="bg-gray-50 border-2 border-gray-100 p-4 object-contain w-60 mx-auto sm:w-full"
             />
-            <ScrollArea className="h-[200px]">
+            <div className="max-h-[200px] md:max-h-[310px] overflow-y-scroll">
               <div className="space-y-2">{description}</div>
-            </ScrollArea>
+            </div>
             <div className="space-y-2">
               <H5>Main stack</H5>
               <div className="flex flex-wrap gap-2">
