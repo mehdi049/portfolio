@@ -11,7 +11,7 @@ export default function Hero() {
       className="flex flex-col sm:flex-row gap-8 sm:gap-4 min-h-screen items-center sm:justify-between pt-[80px] md:pt-0 relative"
       id="home"
     >
-      <div className="flex flex-col items-center sm:items-start gap-6 sm:gap-12 grow order-2 sm:order-1">
+      <div className="flex flex-col items-center sm:items-start gap-6 sm:gap-12 sm:grow order-2 sm:order-1">
         <H1>
           Senior web <br />
           developer

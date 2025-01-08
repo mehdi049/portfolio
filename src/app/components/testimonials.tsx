@@ -135,7 +135,9 @@ const TestimonialItem = ({
         </div>
       </div>
       <div className="col-span-2">
-        <p className="text-gray-500">&quot;{testimonial}&quot;</p>
+        <p className="text-gray-500 min-h-56 sm:min-h-44 md:min-h-36 lg:min-h-24">
+          &quot;{testimonial}&quot;
+        </p>
       </div>
     </>
   );
