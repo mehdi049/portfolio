@@ -532,7 +532,7 @@ const PortfolioItem = ({
               <div className="space-y-2">{description}</div>
             </div>
             <div className="space-y-2">
-              <H5>Main stack</H5>
+              <H5>Tech stack</H5>
               <div className="flex flex-wrap gap-2">
                 {mainStack.map((stack, index) => (
                   <Badge key={index}>{stack}</Badge>
