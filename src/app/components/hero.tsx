@@ -28,7 +28,11 @@ export default function Hero() {
           >
             <Button>Download my CV</Button>
           </a>
-          <a href="#" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.upwork.com/freelancers/~011c1c4df7e86a3d93"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button>Hire me on Upwork</Button>
           </a>
         </div>

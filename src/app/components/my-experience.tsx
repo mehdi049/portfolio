@@ -96,7 +96,7 @@ export default function MyExperience() {
           <ExperienceItem
             title="Freelancer web developer"
             company="Upwork"
-            link="#"
+            link="https://www.upwork.com/freelancers/~011c1c4df7e86a3d93"
             date="2021 - 2022"
             contractType="Freelance"
             workType="Remote"
